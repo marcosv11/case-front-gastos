@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+ 
+
+
+.box {
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  margin-top: 150px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.up {
+    text-transform: uppercase;
+}
+.quadrado {
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-size: 6px;
+-moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  min-height: 70px;
+  padding-top: 20px;
+}
+ 
+.quadrado:hover  {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+ 
+ 
+
+.titulo-principal {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-top: 150px  !important;
+    margin-bottom: 50px;
+   
+
+    
+    }
+
+ 
+
+ 
+ 
+ .quadrado h1 {
+    font-size: 20px;
+    padding: 5px;
+        text-transform: uppercase;
+    
+ }
+
+ .quadrado1 {
+    width: 100%;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;    
+}
