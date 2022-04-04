@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 
 import "./GetAll.css";
 import axios from "axios";
+import Loading from "./Loading";
 
 const GetAll = () => {
   const [itens, setItens] = useState([]);
@@ -29,6 +30,7 @@ const GetAll = () => {
       })
       .catch(() => {
         console.log("erro aqui");
+        <Loading/>
       });
   }, []);
 
@@ -41,7 +43,7 @@ const GetAll = () => {
     return objectt.name;
   };
 
-  if(isLoading) return <span>loading...</span>
+  if(isLoading) return <Loading/>
   return (
     <div className="container">
       <div className="row titulo-principal container">
