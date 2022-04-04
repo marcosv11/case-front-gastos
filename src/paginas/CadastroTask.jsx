@@ -27,7 +27,7 @@ class CadastroTask extends Component {
 
   submitHandler = (e) => {
     e.preventDefault();
-    console.log(this.state);
+  
     axios
       .post("http://localhost:3200/api/v1/lancamento", {
         idCategoria: this.state.idCategoria,
@@ -36,13 +36,11 @@ class CadastroTask extends Component {
         value: Number(this.state.value),
       })
       .then((response) => {
-        console.log(this.state.categorys);
-        console.log(response);
-         alert("Adicionado com sucesso!")
-				 return window.location.href = "/gastos"	 	
+        alert("Adicionado com sucesso!");
+        return (window.location.href = "/gastos");
       })
       .catch((error) => {
-         alert("Ops algo está errado")
+        alert("Ops algo está errado");
 
         console.log(error);
       });
@@ -72,12 +70,12 @@ class CadastroTask extends Component {
           <form onSubmit={this.submitHandler}>
             <div className="lineone row d-flex">
               <label className="col-4">Categoria</label>
-            
-
-              <a href="/cadastroCategoria" className="col-4">Cadastrar nova categoria</a>
+              <a href="/cadastroCategoria" className="col-4">
+                Cadastrar nova categoria
+              </a>
             </div>
             <div className="row mt-4 mb-5 ">
-                <select
+              <select
                 type="text"
                 name="idCategoria"
                 value={idCategoria}
@@ -96,6 +94,7 @@ class CadastroTask extends Component {
             <div>
               <label>Descrição</label>
               <input
+                required
                 type="text"
                 name="description"
                 value={description}
@@ -105,26 +104,27 @@ class CadastroTask extends Component {
             <div className="">
               <label>Data</label>
               <input
-                type="text"
+                required
+                placeholder="dd/mm/yyyy"
                 name="date"
                 value={date}
                 onChange={this.changeHandler}
+              
               />
             </div>
-      
+
             <div className="">
-             
-                <label>Valor</label>
-                <input
-                  type="number"
-                  name="value"
-                  value={value}
-                  onChange={this.changeHandler}
-                />
-            
+              <label>Valor</label>
+              <input
+                required
+                type="number"
+                name="value"
+                value={value}
+                onChange={this.changeHandler}
+              />
             </div>
-              <div className="btn-post col-3 ">
-              <button type="submit" className="btn-grad" >
+            <div className="btn-post col-3 ">
+              <button type="submit" className="btn-grad">
                 Cadastrar
               </button>
             </div>
