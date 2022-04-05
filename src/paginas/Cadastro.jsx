@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import "./Cadastro.css";
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom';
+
 
 class Cadastro extends Component {	
 	constructor(props) {
@@ -50,6 +50,7 @@ class Cadastro extends Component {
 				<form onSubmit={this.submitHandler}>
 					<div>
 						<input
+							required
 							type="text"
 							name="name"
 							value={name}

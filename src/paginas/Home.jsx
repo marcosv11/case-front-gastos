@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import { useNavigate } from 'react-router-dom';
+import GetAll from './GetAll'
 
 const Home = () => {
 
@@ -17,7 +18,7 @@ const navigate = useNavigate()
         <h1 className="overlay__title">BEM VINDO AO SEU GERENCIADOR DE GASTOS.</h1>
      
 
-          {/* <p className="mt-5 overlay__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p> */}
+  
           
         <div className="row">
           <div className="d-flex">
@@ -43,6 +44,11 @@ const navigate = useNavigate()
       </div>
 
 
+      </div>
+
+
+      <div className="row">
+        <GetAll/>
       </div>
  </div>
   )
