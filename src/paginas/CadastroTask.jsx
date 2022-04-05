@@ -105,7 +105,7 @@ class CadastroTask extends Component {
               <label>Data</label>
               <input
                 required
-                placeholder="dd/mm/yyyy"
+                type="date"
                 name="date"
                 value={date}
                 onChange={this.changeHandler}
