@@ -23,7 +23,6 @@ Para deixar a aplicação funcional seguir este tutorial e subir a API : https:/
 
 ## Como Rodar
 
-## Metodo 1:
 
 1) Instalar o Docker
 
@@ -32,7 +31,7 @@ Para deixar a aplicação funcional seguir este tutorial e subir a API : https:/
 ```bash
 docker pull mavinja/react-case:1.0
 ```
-Depois que baixar a imagem
+Depois que der pull na imagem
 
 ```bash
 docker run -d -p 3000:3000 mavinja/react-case:1.0
@@ -40,6 +39,12 @@ docker run -d -p 3000:3000 mavinja/react-case:1.0
 
 A aplicação vai subir na porta http://localhost:3000/
 
+link Docker Hub: https://hub.docker.com/r/mavinja/react-case
+
+<br>
+
+
+## Metodo 2
 
 Abra o terminal (CMD, bash, GitBash ou qualquer terminal de sua preferência)
 
@@ -94,8 +99,9 @@ You can now view my-app in the browser.
 </h1>
 
 <br>
----
+ 
 ## Ver os todos os gastos cadastrados
+
 
 - Acesse: /gastos
 
